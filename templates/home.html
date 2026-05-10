@@ -1,0 +1,695 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Aluminium & Container Dynamics (Pty) Ltd</title>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Professional aluminium windows, doors, glass systems, shopfronts and container conversions in Johannesburg.">
+
+    <link rel="stylesheet"
+          href="/static/style.css">
+
+</head>
+
+<body>
+
+<!-- ASSISTANT BUTTON -->
+
+<div class="assistant-toggle"
+     onclick="toggleAssistant()">
+
+    ACD Assistant 💬
+
+</div>
+
+<!-- ASSISTANT POPUP -->
+
+<div class="assistant-popup"
+     id="assistantPopup">
+
+    <div class="assistant-header">
+        ACD Assistant 👋
+    </div>
+
+    <div class="assistant-content">
+
+        <p>
+            Need assistance with our products or services?
+        </p>
+
+        <p>
+            Choose an option below:
+        </p>
+
+        <div class="assistant-buttons">
+
+            <a href="#services">
+                View Services
+            </a>
+
+            <a href="#estimator">
+                Get Instant Estimate
+            </a>
+
+            <a href="{{whatsapp_visit}}"
+               target="_blank">
+
+                Book Site Visit
+            </a>
+
+            <a href="https://wa.me/27791532379"
+               target="_blank">
+
+               WhatsApp Chris
+            </a>
+
+            <a href="mailto:evanehrke8@gmail.com">
+
+               Email Evan
+            </a>
+
+            <a href="mailto:chris.kleynhans76@gmail.com">
+
+               Email Chris
+            </a>
+
+            <a href="tel:+27744399710">
+
+               Call Evan
+            </a>
+
+            <a href="tel:+27791532379">
+
+               Call Chris
+            </a>
+
+        </div>
+
+        <button class="assistant-close"
+                onclick="toggleAssistant()">
+
+            Close
+
+        </button>
+
+    </div>
+
+</div>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+    <div class="logo-text">
+
+        <h1>ACD</h1>
+
+        <div class="company-name">
+            Aluminium & Container Dynamics (Pty) Ltd
+        </div>
+
+        <div class="tagline">
+            Precision Workmanship. Professional Results.
+        </div>
+
+    </div>
+
+    <div class="nav-links">
+
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+
+    </div>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-overlay">
+
+        <h1>
+            Aluminium & Glass Specialists
+        </h1>
+
+        <p>
+            Premium aluminium and glass solutions.
+        </p>
+
+        <a href="#estimator"
+           class="hero-btn">
+
+            Get Instant Estimate
+
+        </a>
+
+    </div>
+
+</section>
+
+<!-- WHY CHOOSE US -->
+
+<section class="why-us">
+
+<h2>Why Choose ACD?</h2>
+
+<div class="why-grid">
+
+<div class="why-card">
+
+<h3>Professional Workmanship</h3>
+
+<p>
+Precision workmanship,
+quality finishes and
+attention to detail.
+</p>
+
+</div>
+
+<div class="why-card">
+
+<h3>Fast Turnaround</h3>
+
+<p>
+Efficient manufacturing
+and installation timelines
+you can depend on.
+</p>
+
+</div>
+
+<div class="why-card">
+
+<h3>Trusted Service</h3>
+
+<p>
+Reliable customer service
+and honest professional advice.
+</p>
+
+</div>
+
+<div class="why-card">
+
+<h3>Modern Systems</h3>
+
+<p>
+Premium aluminium and
+glass systems built
+for modern living.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- WHY ALUMINIUM -->
+
+<section class="why-aluminium">
+
+<h2>Why Aluminium & Glass?</h2>
+
+<div class="aluminium-grid">
+
+<div class="aluminium-card">
+
+<h3>Modern Appearance</h3>
+
+<p>
+Increase the value and
+appearance of your property
+with sleek modern finishes.
+</p>
+
+</div>
+
+<div class="aluminium-card">
+
+<h3>Low Maintenance</h3>
+
+<p>
+Aluminium systems are durable,
+rust resistant and built
+to last for years.
+</p>
+
+</div>
+
+<div class="aluminium-card">
+
+<h3>Energy Efficient</h3>
+
+<p>
+Improve lighting,
+ventilation and insulation
+through quality glass systems.
+</p>
+
+</div>
+
+<div class="aluminium-card">
+
+<h3>Strong Investment</h3>
+
+<p>
+Premium aluminium upgrades
+increase property value
+and buyer appeal.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ESTIMATOR -->
+
+<section class="estimator-section"
+         id="estimator">
+
+<div class="container">
+
+<div class="card">
+
+<img src="/static/logo.png"
+     class="estimator-logo">
+
+<h2>ACD Instant Estimator</h2>
+
+<form method="POST">
+
+<div id="items">
+
+<div class="item">
+
+<label>Product Type</label>
+
+<select name="product">
+
+<option>Single Hinge Door</option>
+<option>Double Hinge Door</option>
+<option>Sliding Door (Heavy Duty)</option>
+<option>Sliding Door (Light Duty)</option>
+<option>Pivot Door</option>
+<option>Folding Door (3 Leaf)</option>
+<option>Folding Door (5 Leaf)</option>
+<option>Folding Door (7 Leaf)</option>
+<option>Top Hung Window</option>
+<option>Side Hung Window</option>
+<option>Sliding Window</option>
+<option>Stacking Window</option>
+<option>Fixed Panel / Shopfront</option>
+
+</select>
+
+<label>Aluminium Colour</label>
+
+<select name="colour">
+
+<option>White</option>
+<option>Bronze</option>
+<option>Black</option>
+<option>Charcoal</option>
+<option>Natural</option>
+
+</select>
+
+<label>Width (mm)</label>
+<input type="number" name="width">
+
+<label>Height (mm)</label>
+<input type="number" name="height">
+
+<label>Quantity</label>
+
+<input type="number"
+       name="qty"
+       value="1">
+
+<hr>
+
+</div>
+
+</div>
+
+<button type="button"
+        class="add-btn"
+        onclick="addItem()">
+
++ Add Another Item
+
+</button>
+
+<label>Your Name</label>
+<input name="name" required>
+
+<label>Phone Number</label>
+<input name="phone" required>
+
+<label>Your Area</label>
+<input name="area">
+
+<button type="submit"
+        class="main-btn">
+
+Get Estimate
+
+</button>
+
+</form>
+
+{% if price_low %}
+
+<div class="result">
+
+<strong>Item Breakdown</strong>
+
+<br><br>
+
+{{ breakdown|safe }}
+
+<strong>Total Estimate</strong>
+
+<br>
+
+R{{price_low}} - R{{price_high}}
+
+<div class="disclaimer">
+
+<strong>Please Note:</strong>
+
+<ul>
+
+<li>
+Prices include manufacturing,
+standard installation,
+and delivery within
+a 30KM radius of Johannesburg.
+</li>
+
+<li>
+All prices exclude 15% VAT.
+</li>
+
+<li>
+Estimates are based on
+standard specifications.
+</li>
+
+</ul>
+
+</div>
+
+<a class="whatsapp"
+   href="{{whatsapp}}"
+   target="_blank">
+
+Send via WhatsApp
+
+</a>
+
+<a class="whatsapp"
+   href="{{whatsapp_visit}}"
+   target="_blank">
+
+Book Site Visit
+
+</a>
+
+</div>
+
+{% endif %}
+
+</div>
+</div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section class="services"
+         id="services">
+
+<h2>Our Services</h2>
+
+<p class="services-subtitle">
+Professional aluminium,
+glass and modular solutions.
+</p>
+
+<div class="service-grid">
+
+<div class="service-card">
+
+<h3>Aluminium Windows</h3>
+
+<p>
+Modern aluminium window systems
+for homes and commercial spaces.
+</p>
+
+</div>
+
+<div class="service-card">
+
+<h3>Aluminium Doors</h3>
+
+<p>
+Premium sliding, folding,
+pivot and hinged door systems.
+</p>
+
+</div>
+
+<div class="service-card">
+
+<h3>Shopfronts</h3>
+
+<p>
+Professional shopfront solutions
+for retail and commercial spaces.
+</p>
+
+</div>
+
+<div class="service-card">
+
+<h3>Maintenance & Repairs</h3>
+
+<p>
+Professional aluminium,
+glass and hardware repairs.
+</p>
+
+</div>
+
+<div class="service-card">
+
+<h3>Container Conversions</h3>
+
+<p>
+Custom modular insulated structures
+and shipping container conversions.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- REVIEWS -->
+
+<section class="reviews"
+         id="reviews">
+
+<h2>Customer Reviews</h2>
+
+<div class="review-slider">
+
+<div class="review-slide active">
+
+★★★★★
+
+<p>
+Excellent workmanship and
+very professional service.
+</p>
+
+<strong>- Residential Client</strong>
+
+</div>
+
+<div class="review-slide">
+
+★★★★★
+
+<p>
+Fast turnaround time and
+quality installations.
+Highly recommended.
+</p>
+
+<strong>- Commercial Client</strong>
+
+</div>
+
+</div>
+
+<div class="review-box">
+
+<input type="text"
+       placeholder="Your Name">
+
+<div class="stars">
+
+<span>★</span>
+<span>★</span>
+<span>★</span>
+<span>★</span>
+<span>★</span>
+
+</div>
+
+<textarea placeholder="Leave your review here..."></textarea>
+
+<button>
+Submit Review
+</button>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer"
+        id="contact">
+
+<h2>
+Aluminium & Container Dynamics (Pty) Ltd
+</h2>
+
+<p>
+Professional aluminium,
+glass and modular structure solutions.
+</p>
+
+<p>
+Johannesburg, South Africa
+</p>
+
+</footer>
+
+<!-- FLOATING BUTTONS -->
+
+<a href="https://wa.me/27791532379"
+   class="floating-whatsapp"
+   target="_blank">
+
+WhatsApp
+
+</a>
+
+<a href="https://www.facebook.com/share/1L4xfwdMGR/"
+   class="floating-facebook"
+   target="_blank">
+
+Facebook
+
+</a>
+
+<a href="mailto:evanehrke8@gmail.com"
+   class="floating-email">
+
+Email
+
+</a>
+
+<a href="tel:+27744399710"
+   class="floating-call">
+
+Call
+
+</a>
+
+<script>
+
+function addItem() {
+
+    const container =
+    document.getElementById("items");
+
+    const item =
+    container.children[0].cloneNode(true);
+
+    item.querySelectorAll("input").forEach(input => {
+
+        if(input.name !== "qty") {
+            input.value = "";
+        }
+
+    });
+
+    container.appendChild(item);
+}
+
+function toggleAssistant() {
+
+    const popup =
+    document.getElementById("assistantPopup");
+
+    if (popup.style.display === "block") {
+
+        popup.style.display = "none";
+
+    } else {
+
+        popup.style.display = "block";
+    }
+}
+
+/* REVIEW SLIDESHOW */
+
+let slideIndex = 0;
+
+const slides =
+document.querySelectorAll(".review-slide");
+
+function showSlides() {
+
+    slides.forEach(slide => {
+        slide.classList.remove("active");
+    });
+
+    slideIndex++;
+
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+
+    slides[slideIndex - 1]
+    .classList.add("active");
+
+    setTimeout(showSlides, 4000);
+}
+
+showSlides();
+
+</script>
+
+</body>
+  </html>
