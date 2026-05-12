@@ -104,23 +104,16 @@
 
 <nav class="navbar">
 
-    <div class="logo-container">
+    <div class="logo-text">
 
-        <img src="/static/logo.png"
-             class="navbar-logo">
+        <h1>ACD</h1>
 
-        <div class="logo-text">
+        <div class="company-name">
+            Aluminium & Container Dynamics (Pty) Ltd
+        </div>
 
-            <h1>ACD</h1>
-
-            <div class="company-name">
-                Aluminium & Container Dynamics (Pty) Ltd
-            </div>
-
-            <div class="tagline">
-                Precision Workmanship. Professional Results.
-            </div>
-
+        <div class="tagline">
+            Precision Workmanship. Professional Results.
         </div>
 
     </div>
@@ -158,72 +151,6 @@
         </a>
 
     </div>
-
-</section>
-
-<!-- SUPPLIERS -->
-
-<section class="suppliers">
-
-<h2>
-Trusted Suppliers & Industry Partners
-</h2>
-
-<div class="supplier-slider">
-
-<div class="supplier-track">
-
-<div class="supplier-card">
-Conways Aluminium Stockists
-</div>
-
-<div class="supplier-card">
-National Glass Distributors
-</div>
-
-<div class="supplier-card">
-Crealco
-</div>
-
-<div class="supplier-card">
-CISA
-</div>
-
-<div class="supplier-card">
-Wispeco Aluminium
-</div>
-
-<div class="supplier-card">
-Aluco Aluminium
-</div>
-
-<div class="supplier-card">
-Conways Aluminium Stockists
-</div>
-
-<div class="supplier-card">
-National Glass Distributors
-</div>
-
-<div class="supplier-card">
-Crealco
-</div>
-
-<div class="supplier-card">
-CISA
-</div>
-
-<div class="supplier-card">
-Wispeco Aluminium
-</div>
-
-<div class="supplier-card">
-Aluco Aluminium
-</div>
-
-</div>
-
-</div>
 
 </section>
 
@@ -558,18 +485,6 @@ for retail and commercial spaces.
 
 <div class="service-card">
 
-<h3>Custom Steel Gates</h3>
-
-<p>
-Modern custom steel gate
-manufacturing and installations
-for residential and commercial properties.
-</p>
-
-</div>
-
-<div class="service-card">
-
 <h3>Maintenance & Repairs</h3>
 
 <p>
@@ -581,19 +496,11 @@ glass and hardware repairs.
 
 <div class="service-card">
 
-<h3>Containers & Pod Units</h3>
+<h3>Container Conversions</h3>
 
 <p>
-Custom manufactured containers
-and pod units.
-
-<br><br>
-
-Shipping container conversions.
-
-<br><br>
-
-Offices • Mobile Homes • Clinics • Storage Units • Classrooms • ECD Centres • Custom designs & builds.
+Custom modular insulated structures
+and shipping container conversions.
 </p>
 
 </div>
@@ -647,11 +554,11 @@ Highly recommended.
 
 <div class="stars">
 
-<span onclick="rateStar(this)">☆</span>
-<span onclick="rateStar(this)">☆</span>
-<span onclick="rateStar(this)">☆</span>
-<span onclick="rateStar(this)">☆</span>
-<span onclick="rateStar(this)">☆</span>
+<span>★</span>
+<span>★</span>
+<span>★</span>
+<span>★</span>
+<span>★</span>
 
 </div>
 
@@ -753,6 +660,8 @@ function toggleAssistant() {
     }
 }
 
+/* REVIEW SLIDESHOW */
+
 let slideIndex = 0;
 
 const slides =
@@ -777,24 +686,6 @@ function showSlides() {
 }
 
 showSlides();
-
-function rateStar(star) {
-
-    const stars =
-    star.parentElement.children;
-
-    let clickedIndex =
-    Array.from(stars).indexOf(star);
-
-    for(let i = 0; i < stars.length; i++) {
-
-        if(i <= clickedIndex) {
-            stars[i].innerHTML = "★";
-        } else {
-            stars[i].innerHTML = "☆";
-        }
-    }
-}
 
 </script>
 
